@@ -38,7 +38,7 @@ const Search: FC<SearchProps> = ({ title }) => {
                             value={city}
                             onChange={changeHandler}
                         />
-                        <button><a>GO</a></button>
+                        <button>Search</button>
                     </form>
         </div>
     );
