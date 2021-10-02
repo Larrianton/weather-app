@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Weather} from "./components/Weather/Weather";
+import {Clock} from "./components/Clock/Clock";
+import {Route, Switch} from "react-router-dom";
+import Greetings from "./components/Greetings/Greetings";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <div className="App">
+            <Switch>
+                <Route exact path={"/"}
+                       component={Greetings}/>
+                <Route exact path={"/weather"}
+                       component={Weather}/>
+                <Route exact path={"/clock"}
+                       component={Clock}/>
+            </Switch>
+        </div>
+
+    );
 }
 
 export default App;

@@ -1,0 +1,30 @@
+.greetingsBlockWrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.greetingsMenu {
+    display: flex;
+    justify-content: center;
+}
+
+.greetingsMenu button {
+    appearance: none;
+    margin: 4px 2px;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 16px;
+    min-width: 100px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.14s;
+    outline: none;
+}
+
+.greetingsMenu button a {
+    text-decoration: none;
+}
